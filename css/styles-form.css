@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:Inter:wght@300;400&display=swap');
+:root{
+    --colorBotonEnviar:#1CD1B0;
+
+}
+body{
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+
+/*Main del Form*/
+
+.login{
+    background-color: #00669F;
+    padding: 20px;
+    margin: 20px 260px 120px 260px;
+    border-radius: 20px;
+}
+.fTitulo {
+    text-align: center;
+    color: white;
+}
+
+.controls{
+   border-radius: 4px;
+   margin-bottom: 13px;
+   margin-top: 10px;
+   
+   border: 1px solid white ;
+   padding: 10px;
+  }
+
+
+
+.pform {
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    font-weight: 300px;
+    padding: 10px;
+
+}
+ 
+/* Datos del Formulario*/
+
+.datosFormulario{
+    display: flex;
+    justify-content: space-evenly;
+}
+.columnaIzq{
+   display: flex;
+   flex-direction: column;
+}
+
+.columnaDer{
+  display: flex;
+   flex-direction: column;
+
+}
+
+/*Botón Enviar*/
+.divBotonEnviar {
+    display: flex;
+    justify-content: center;
+}
+
+.botonEnviar{
+    border-radius: 20px;
+    color: black;
+    background-color:var(--colorBotonEnviar);
+    width: 360px;
+    height: 77px;
+    border: none;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}

@@ -1,0 +1,106 @@
+/********** ESTILOS PARA EL MAIN **********/
+
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 0.9;  /*Le estoy diciendo a la primera (section) que crezca el 90% del espacio disponible*/
+    flex-wrap: wrap; /*Si ocupa el máximo los siguientes los ponga abajo*/
+  
+  }
+  
+  section article {
+    background-color: #f3f3f3;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+  
+  section article .contenedor {
+    height: 200px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+    background-size: cover;
+  }
+  
+  section article .contenedor i {
+    font-size: 24px;
+    color: red;
+    padding: 15px;
+  }
+  
+  section article .bgBatman {
+    background-image: url("../img/fondoBatman.png");
+  }
+  section article .bgHarley {
+    background-image: url("../img/fondoHarleyQuinn.png");
+  }
+  section article .bgSuperman {
+    background-image: url("../img/fondoSuperman.png");
+  }
+  
+  section article .bgMujerMaravilla {
+    background-image: url("../img/fondoSuperman.png");
+  }
+  
+  section article img {
+    border-radius: 50%;
+    width: 125px;
+    position: absolute;
+    top: 130px;
+  }
+  
+  section article h3 {
+    font-size: 24px;
+    margin-top: 70px;
+    text-transform: uppercase;
+  }
+  
+  section article p {
+    font-size: 12px;
+    height: 120px;
+    margin: 10px 20px;
+    text-align: left;
+  }
+  
+  section article button {
+    background-color: #00669f;
+    border: none;
+    color: white;
+  
+    margin: 25px;
+    padding: 10px 30px;
+  }
+
+
+  /********** ESTILOS PARA EL FOOTER **********/
+
+footer {
+    background-color: #00669f;
+    color: white;
+    padding: 30px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  footer img {
+    position: absolute;
+    right: 25px;
+    width: 100px;
+  }
+  
+  

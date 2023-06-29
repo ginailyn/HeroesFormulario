@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Héroes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/styles-form.css" />
+  </head>
+  <body>
+    <header>
+      <p>20% de descuento en todos los productos</p>
+    </header>
+      
+      <!--<h1> Card Super Héroes</h1> -->
+      <div class="logo">
+
+        <a href="#"><img class= "" src="img/logo 1.svg" alt=""></a>
+        <p>Tienda de SuperHéroes</p>
+      </div>
+      
+    <nav class="topnav">
+      <ul>
+          <li>Contacto</li>
+          <li>Registrarme</li>
+          <li>Ingresar</li>
+      </ul>
+    </nav>
+      <br>
+      <br>
+    <main>
+       
+      <!-- Formulario -->
+          
+        <div class="login">
+          <form action="form.html">
+               <h2 class="fTitulo"> Añadí tu súper!</h2>
+                <p class="pform">Agrega tu personaje favorito completando las opciones</p>
+                 <div class="datosFormulario">
+                      <div class="columnaIzq">
+                           <label for="nombre">Nombre y apellido (Obligatorio)</label>
+                            <input
+                              class="controls"
+                              type="text"
+                              name="nombre"
+                              id="nombre"
+                                placeholder="Juan Perez"
+                                minlength="3"
+                                maxlength="20"
+                                oninvalid="setCustomValidity('Por favor, completar correctamente');"
+                                required
+                            />
+                            <!-- input date Fecha nacimiento -->
+                                <label for="fecha">Fecha</label>
+                                <input
+                                  class="controls"
+                                  type="date"
+                                  name="fecha"
+                                  id="fecha"
+                                  value="2023-06-12"
+                                  min="2023-06-10"
+                                />
+
+                                <!-- textarea -->
+                                  <textarea
+                                    class="controls"
+                                    name="comentarios"
+                                    id="comentarios"
+                                    cols="30"
+                                    rows="17"
+                                    placeholder="Descripción"
+                                
+                                  ></textarea>
+                      </div> <!-- Fin div columnaIzq-->
+                      <div class="columnaDer">
+                          <label for="especie">*Especie</label>
+                          
+                          <select class="controls" name="Especie" id="especie">
+                              <option value="especie">Especie</option>
+                              <option value="conocida">Conocida</option>
+                              <option value="alienígena">Alienígena</option>
+                          </select>
+                          
+                          
+                          <!-- input Agregar Foto -->
+                          <label for="foto">Agregar foto</label>
+                            <input
+                              class="controls"
+                              type="file"
+                              name="foto"
+                              id="foto"
+                              value="Seleccionar Archivo"
+                              accept="image/png,image/jpeg" multiple
+                            />
+
+                            <!-- input checkbox -->   
+              
+                            <p>Poderes</p>
+                              <label for="Volar">
+                                    <input  class="controls"
+                                    type="checkbox" name="poderes" id="Volar" value="Volar" />
+                                    Volar
+                              </label>
+                              <label for="Superinteligencia">
+                                    <input class="controls"
+                                    type="checkbox" name="poderes" id="Superinteligencia" value="Superinteligencia" />
+                                    Super Inteligencia
+                              </label>
+                              <label for="VistaRayolaser">
+                                      <input class="controls"
+                                            type="checkbox" name="poderes" id="VistaRayolaser" value="VistaRayolaser" />
+                                      Vista Rayo Láser
+                              </label>
+                              <label for="BilleteraGorda">
+                                <input class="controls"
+                                      type="checkbox" name="poderes" id="BilleteraGorda" value="BilleteraGorda" />
+                                Billetera Gorda
+                              </label>
+                              <br>
+                              <hr size= 1px width="100%" color="white"/>
+                              <br>
+                              <!-- Input radio -->
+                                <p>Tipo de Personaje</p>
+                                <label for="heroe" >
+                                  <input  class="controls" type="radio" name="tipoPersonaje" id="heroe" value="dni" />
+                                  Héroe / Heroina
+                                </label>
+                                <label for="villano">
+                                  <input class="controls" type="radio" name="tipoPersonaje" id="villano" value="villano" />
+                                  Villana / Villano
+                                </label>
+                      </div> <!-- Fin div columnaDer-->
+                 </div> <!-- Fin div datosFormulario-->
+                 
+                 <!-- Botón Enviar-->
+                 <div class="divBotonEnviar">
+                      <input class="botonEnviar" type="submit" value="Añadir" />
+                 </div> 
+          </form>
+
+         </div> <!-- Fin div class="login"-->   
+    </main>
+
+  </body>
+</html>
